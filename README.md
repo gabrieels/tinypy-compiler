@@ -6,7 +6,7 @@ O trabalho deve atender três componentes básicos de um compilador:
 
 ### Analisador Léxico
 
-Componente responsável pela primeira fase de um compilador, chamada de *análise sintática* ou *leitura (scanning)*. O analisador léxico lê o fluxo de caracteres que compõem o programa fonte e os agrupa em sequências significativas, chamadas *lexemas*. Para cada lexema o analisador léxico produz como saída um *token* no formato `<nome-token, valor-atributo>` que é passado para a fase subsequente, a análise sintática. O primeiro componente de um token, *nome-token*, é um símbolo abstrato usado durante a análise sintática; já o segundo componente, *valor-atributo*, aponta para uma entrada na tabela de símbolos referente a esse token.
+Componente responsável pela primeira fase de um compilador, chamada de *análise léxica* ou *leitura (scanning)*. O analisador léxico lê o fluxo de caracteres que compõem o programa fonte e os agrupa em sequências significativas, chamadas *lexemas*. Para cada lexema o analisador léxico produz como saída um *token* no formato `<nome-token, valor-atributo>` que é passado para a fase subsequente, a análise sintática. O primeiro componente de um token, *nome-token*, é um símbolo abstrato usado durante a análise sintática; já o segundo componente, *valor-atributo*, aponta para uma entrada na tabela de símbolos referente a esse token.
 
 ### Analisador Sintático
 
