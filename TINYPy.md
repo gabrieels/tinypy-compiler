@@ -36,8 +36,8 @@ TINYPy, ao contrário de Python e TINY, não faz diferença entre maiúsculas e 
 * Comentários: começam com `{` e terminam com `}`, sem aninhamento.
 * Palavras reservadas: `read`, `write`, `if`, `else`, `elif`, `while`, `int`, `bool`, `void`, `and`, `or`, `not`, `pass`, `true`, `false`.
 * Identificadores: uma letra, seguido de zero ou mais letras, dígitos ou `_`.
-* Numerais: apenas números inteiros.
-* Operadores e pontuação: `(`, `)`, `,`, `=`, `<`, `:=` (`ATRIB`), `+`, `-`, `*`, `/`, `:`.
+* Numerais: números inteiros e reais (ex: 4.78, -3.1, .75).
+* Operadores e pontuação: `(`, `)`, `,`, `=`, `<`, '>', `:=` (`ATRIB`), `+`, `-`, `*`, `/`, `:`.
 
 ## Sintaxe
 
@@ -61,6 +61,7 @@ EXP    -> EXP or LEXP
 LEXP   -> LEXP and REXP
 | REXP
 REXP   -> REXP < AEXP
+| REXP > AEXP
 | REXP = AEXP
 | AEXP
 AEXP   -> AEXP + MEXP
